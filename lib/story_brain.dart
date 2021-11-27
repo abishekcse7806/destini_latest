@@ -51,10 +51,25 @@ class StoryBrain {
 
   ///Using the story plan, update nextStory() to change the storyNumber depending on the choice made by the user. e.g. if choiceNumber was equal to 1 and the storyNumber is 0, the storyNumber should become 2.
   void getNextStory(int choiceNumber) {
-    storyNumber == 0 && choiceNumber == 1 ? storyNumber = 2 : storyNumber = 1;
-    storyNumber == 1 && choiceNumber == 1 ? storyNumber = 2 : storyNumber = 3;
-    storyNumber == 2 && choiceNumber == 1 ? storyNumber = 5 : storyNumber = 4;
+    if (storyNumber == 0 && choiceNumber == 1) {
+      storyNumber = 2;
+    } else if (storyNumber == 0 && choiceNumber == 2) {
+      storyNumber = 1;
+    } else if (storyNumber == 1 && choiceNumber == 1) {
+      storyNumber = 2;
+    } else if (storyNumber == 1 && choiceNumber == 2) {
+      storyNumber = 3;
+    } else if (storyNumber == 2 && choiceNumber == 1) {
+      storyNumber = 5;
+    } else if (storyNumber == 2 && choiceNumber == 2) {
+      storyNumber = 4;
+    }
   }
+
+  /*storyNumber == 0 && choiceNumber == 1 ? storyNumber = 2 : storyNumber = 1;
+    storyNumber == 1 && choiceNumber == 1 ? storyNumber = 2 : storyNumber = 3;
+    storyNumber == 2 && choiceNumber == 1 ? storyNumber = 5 : storyNumber = 4;*/
+
 }
 
 /// This Class's Properties & Methods are going to Pass , So here We Need to Create Object for this Class
