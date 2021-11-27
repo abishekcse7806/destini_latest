@@ -6,3 +6,5 @@ class Story {
   late String choice1;
   late String choice2;
 }
+
+/// This Class's Properties are not going to Pass anywhere, So here Don't Need to Create Object for this Class
