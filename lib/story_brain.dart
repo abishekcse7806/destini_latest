@@ -64,6 +64,12 @@ class StoryBrain {
     } else if (storyNumber == 2 && choiceNumber == 2) {
       storyNumber = 4;
     }
+
+    void reset() {
+      if (storyNumber == 3 || storyNumber == 4 || storyNumber == 5) {
+
+      }
+    }
   }
 
   /*storyNumber == 0 && choiceNumber == 1 ? storyNumber = 2 : storyNumber = 1;
