@@ -65,17 +65,20 @@ class StoryBrain {
       storyNumber = 4;
     }
 
-    void reset() {
-      if (storyNumber == 3 || storyNumber == 4 || storyNumber == 5) {
-
-      }
-    }
-  }
-
-  /*storyNumber == 0 && choiceNumber == 1 ? storyNumber = 2 : storyNumber = 1;
+    /*storyNumber == 0 && choiceNumber == 1 ? storyNumber = 2 : storyNumber = 1;
     storyNumber == 1 && choiceNumber == 1 ? storyNumber = 2 : storyNumber = 3;
     storyNumber == 2 && choiceNumber == 1 ? storyNumber = 5 : storyNumber = 4;*/
+  }
 
+  void reset() {
+    if (storyNumber == 3 && choiceNumber == 1) {
+      storyNumber = 0;
+    } else if (storyNumber == 4 && choiceNumber == 1) {
+      storyNumber = 0;
+    } else if (storyNumber == 5 && choiceNumber == 1) {
+      storyNumber = 0;
+    }
+  }
 }
 
 /// This Class's Properties & Methods are going to Pass , So here We Need to Create Object for this Class

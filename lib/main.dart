@@ -55,6 +55,7 @@ class _StoryPageState extends State<StoryPage> {
                     setState(() {
                       storyBrain.getNextStory(1);
                     });
+                    storyBrain.reset();
                     //Choice 1 made by user.
                   },
                   //Color = Red
